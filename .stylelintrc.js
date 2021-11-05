@@ -1,7 +1,6 @@
 module.exports = {
   root: true,
   plugins: ["stylelint-order"],
-  customSyntax: "postcss-less",
   extends: ["stylelint-config-standard", "stylelint-config-prettier"],
   rules: {
     "selector-class-pattern": null,
@@ -38,5 +37,5 @@ module.exports = {
       { disableFix: true, severity: "warning" },
     ],
   },
-  ignoreFiles: ["**/*.js", "**/*.tsx", "**/*.ts", "index.html"],
+  ignoreFiles: ["**/*.js", "**/*.tsx", "**/*.ts"],
 };
